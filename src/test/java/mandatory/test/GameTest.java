@@ -168,7 +168,7 @@ class GameTest {
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(499, 199, 0));
 
         for (int i = 0; i < validInputs.size(); i++) {
-            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Playerrr " + (i + 1), validInputs.get(i));
             game.playerLife.put("Player " + (i + 1), validInputs.get(i));
             game.playerLife.put("Player " + (i + 1), validInputs.get(i));
         }

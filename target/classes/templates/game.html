@@ -198,18 +198,18 @@
     function plusLife(id, name) {
         console.log(id);
         console.log(name);
-        if (id == "plusPlayer1") {
-            var newValue = parseInt($('h1#lifeAmount1').text());
+            if (id == "plusPlayer1") {
+                var newValue = parseInt($('h1#lifeAmount1').text());
             if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount1').text(newValue);
             }
-            if(newValue == 0){
-                alert("Player is out and can no longer play in this round")
-            }
-            if(newValue == 500){
-                alert("Maximum life reached")
-            }
+        if(newValue == 0){
+            alert("Player is out and can no longer play in this round")
+        }
+        if(newValue == 500){
+            alert("Maximum life reached")
+        }
 
         }
         if (id == "plusPlayer2") {

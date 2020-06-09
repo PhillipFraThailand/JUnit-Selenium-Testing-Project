@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.*;
 
-public class SeleniumTest {
+public class SeleniumUnitTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
@@ -42,9 +42,7 @@ public class SeleniumTest {
   @Test
   public void validPlayers() throws InterruptedException {
 
-
     ArrayList<Integer> validAmountOfPlayers = new ArrayList<Integer>( Arrays.asList(2, 3, 4, 5, 6));
-
 
     for (int i = 0; i < validAmountOfPlayers.size(); i++) {
 
