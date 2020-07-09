@@ -13,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class GameTest {
 
     Game game = new Game();
-
     // MISSING
 //    ? - Test to check that the game board is over when life count is 0
 //    ? - The test to check start new game
@@ -23,28 +22,6 @@ class GameTest {
     @Before
     public void setUp(){
         game = new Game();
-    }
-
-    @Test
-    void addPlayers() {
-
-        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
-        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
-        ArrayList<Integer> invalidInputs = new ArrayList<Integer>( Arrays.asList(-1, 0, 7));
-
-        // Checking if valid inputs passes
-
-        for(int i = 0; i<validInputs.size(); i++) {
-            assertEquals(game.addPlayers(validInputs.get(i)), validOutputs.get(i));
-            game.setPlayerAmount(0);
-        }
-
-        // Checking if invalid inputs throws an exception
-
-        for(int i = 0; i <invalidInputs.size(); i++) {
-            int finalI = i;
-            assertThrows(IllegalArgumentException.class, () -> game.addPlayers(invalidInputs.get(finalI)));
-        }
     }
 
     @Test

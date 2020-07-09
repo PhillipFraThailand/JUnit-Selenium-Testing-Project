@@ -16,6 +16,8 @@ public class Game {
     public int life;
     public String name;
     public HashMap<String, Integer> playerLife = new HashMap<String, Integer>();
+
+
     public HashMap<String, String> playerNames = new HashMap<String, String>();
 
     public Game(HashMap<String, Integer> playerLife) {
