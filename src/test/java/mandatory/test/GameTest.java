@@ -13,12 +13,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class GameTest {
 
     Game game = new Game();
-    // MISSING
-//    ? - Test to check that the game board is over when life count is 0
-//    ? - The test to check start new game
-//    ? - The test to check life count adjustment
-//    ? - The test to check start ‘dice’ rolled and making sure the random number is between 1 and amount of players
-
     @Before
     public void setUp(){
         game = new Game();
